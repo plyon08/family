@@ -1,0 +1,94 @@
+#main-navbar
+{
+    box-shadow: 0px 1px 10px $gray;
+}
+
+#filter-form .form-group
+{
+    width: 100%
+}
+
+.column-headings
+{
+    color: $gray;
+    border-bottom:1px solid $gray;
+}
+
+input
+{
+    color: $light-gray !important;
+    background-color: $dark-gray !important;
+}
+.btn-outline-warning
+{
+    color: $orange !important;
+    border-color: $orange !important;
+}
+
+.btn-outline-warning:hover, .btn-outline-warning:active
+{
+    color: $white !important;
+    background-color: $orange !important;
+}
+
+.btn-outline-warning:focus
+{
+    box-shadow: 0 0 0 0.2rem rgba(246, 153, 63, 0.5) !important;
+}
+
+.income
+{
+    color: $green;
+}
+
+.expense
+{
+    color: $red;
+}
+.savings
+{
+    color: $purple;
+}
+
+.negative-balance
+{
+    color: $red;
+}
+
+.positive-balance
+{
+    color: $blue;
+}
+
+.transaction-link:link, .transaction-link:visited
+{
+    color: $light-gray;
+    text-decoration: none;
+}
+
+.transaction-link:hover, .transaction-link:focus
+{
+    font-weight: 700;
+}
+
+.card
+{
+    color: $black;
+}
+
+#alert
+{
+    position: fixed;
+    bottom: 70px;
+    right: 30px;
+    left: 30px;
+    z-index: 10;
+}
+
+@include media-breakpoint-up(sm)
+{
+    #filter-form .form-group
+    {
+        width: auto;
+    }
+}

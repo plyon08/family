@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\RecipeController;
+use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +22,15 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+// Route::name('transaction.')->group(function() {
+    Route::resources([
+        'transactions' => TransactionController::class,
+    ]);
+// });
+
+// Route::name('recipe.')->group(function() {
+    Route::resources([
+        'recipes' => RecipeController::class,
+    ]);
+// });

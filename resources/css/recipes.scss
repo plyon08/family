@@ -1,0 +1,123 @@
+/******************************
+XS PHONE SCREENS and GLOBAL STYLES
+******************************/
+h2 {
+  text-align: center
+}
+a:link, a:active, a:visited {
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: none
+}
+label {
+  font-size: 1.5em;
+}
+
+.center {text-align: center}
+
+#alert {
+  position: fixed;
+  top: 30px;
+  z-index:10
+}
+
+/*****************************
+Navbar
+*****************************/
+
+.login-status {
+  color: $color-blue;
+  font-style: italic;
+  font-size: .8em;
+}
+.nav-item {
+  margin: 5px
+}
+.nav-item a {
+  width: 100%
+}
+
+/*****************************
+Welcome
+*****************************/
+
+.welcome-heading {
+  font-size: 2em
+}
+.welcome-subheading {
+  font-size: 1em
+}
+
+/*****************************
+Index
+*****************************/
+
+.recipe-index {
+  transform: scale(1,1);
+  transition: transform .4s;
+}
+.recipe-index:hover, .recipe-index:focus {
+  transform: scale(.9,.9);
+}
+.recipe-img-index {
+  border-radius: 16px 16px 0px 0px;
+}
+.recipe-name-index {
+  background-color: $color-light;
+  color: $color-blue-dark;
+  border-radius: 0px 0px 16px 16px
+}
+
+/*****************************
+Show & Edit
+*****************************/
+
+.recipe-img {
+    border-radius: 6px;
+}
+
+/******************************
+MD LG XL LAPTOP/DESKTOP SCREENS
+******************************/
+@include media-breakpoint-up(md) {
+
+    h2 {
+        text-align: left
+    }
+
+    /*****************************
+    Navbar
+    *****************************/
+    .nav-item {
+        margin: 5px
+    }
+
+    /*****************************
+    Welcome
+    *****************************/
+
+    .welcome-heading {
+        font-size: 4em
+    }
+    .welcome-subheading {
+        font-size: 2em
+    }
+
+    /*****************************
+    Index
+    *****************************/
+
+    .recipe-img-index {
+        height: 200px;
+        width: 100%;
+    }
+
+    /*****************************
+    Show & Edit
+    *****************************/
+
+    .recipe-img {
+        width: 400px
+    }
+}

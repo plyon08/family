@@ -3802,6 +3802,16 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
 
+$(function () {
+  setTimeout(function () {
+    $('#alert').fadeOut('fast');
+  }, 3000);
+  $('input[name="category"]').on('change', function () {
+    $('#category-list').collapse('toggle');
+    $('#category-button').html($(this).val());
+  });
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
